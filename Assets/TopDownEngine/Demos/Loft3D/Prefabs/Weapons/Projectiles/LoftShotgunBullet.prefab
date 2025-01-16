@@ -60,6 +60,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -4847,6 +4850,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -5227,6 +5233,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -10078,6 +10087,7 @@ MonoBehaviour:
   ForceTimescaleMode: 0
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
+  TimescaleMultiplier: 1
   RandomizeDuration: 0
   RandomDurationMultiplier: {x: 0.5, y: 1.5}
   DisplayFullDurationDetails: 0
@@ -10130,7 +10140,7 @@ MonoBehaviour:
     OnResume:
       m_PersistentCalls:
         m_Calls: []
-    OnRevert:
+    OnChangeDirection:
       m_PersistentCalls:
         m_Calls: []
     OnComplete:
@@ -10142,6 +10152,9 @@ MonoBehaviour:
     OnSkipToTheEnd:
       m_PersistentCalls:
         m_Calls: []
+    OnInitializationComplete:
+      m_PersistentCalls:
+        m_Calls: []
     OnEnable:
       m_PersistentCalls:
         m_Calls: []
@@ -10149,6 +10162,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   DebugActive: 0
+  InScriptDrivenPause: 0
   FeedbacksList:
   - rid: 0
   - rid: 1
@@ -10167,11 +10181,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: 778994721
         Label: Sound
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -10292,11 +10306,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: 2013184772
         Label: Particles
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -10378,11 +10392,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: -323685710
         Label: Set Active
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -10466,11 +10480,11 @@ MonoBehaviour:
         Active: 0
         UniqueID: 1731535716
         Label: Freeze Frame
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -10594,6 +10608,7 @@ MonoBehaviour:
   ForceTimescaleMode: 0
   ForcedTimescaleMode: 1
   DurationMultiplier: 1
+  TimescaleMultiplier: 1
   RandomizeDuration: 0
   RandomDurationMultiplier: {x: 0.5, y: 1.5}
   DisplayFullDurationDetails: 0
@@ -10646,7 +10661,7 @@ MonoBehaviour:
     OnResume:
       m_PersistentCalls:
         m_Calls: []
-    OnRevert:
+    OnChangeDirection:
       m_PersistentCalls:
         m_Calls: []
     OnComplete:
@@ -10658,6 +10673,9 @@ MonoBehaviour:
     OnSkipToTheEnd:
       m_PersistentCalls:
         m_Calls: []
+    OnInitializationComplete:
+      m_PersistentCalls:
+        m_Calls: []
     OnEnable:
       m_PersistentCalls:
         m_Calls: []
@@ -10665,6 +10683,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   DebugActive: 0
+  InScriptDrivenPause: 0
   FeedbacksList:
   - rid: 0
   - rid: 1
@@ -10682,11 +10701,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: -1723127381
         Label: Sound
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -10807,11 +10826,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: -842943648
         Label: Particles
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
@@ -10893,11 +10912,11 @@ MonoBehaviour:
         Active: 1
         UniqueID: 1341634739
         Label: Set Active
+        OriginalLabel: 
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
         Chance: 100
-        DisplayColor: {r: 0, g: 0, b: 0, a: 1}
         Timing:
           TimescaleMode: 0
           ExcludeFromHoldingPauses: 0
